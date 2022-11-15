@@ -1,0 +1,225 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* PALETTE  
+
+azzurro header: #add8e6;
+giallo barra menu: #daa520;
+blu sfondo jumbotron: #00008b;
+contenitore jumbotron: #ee82ee;
+azzurro sezioni: #1e90ff;
+rosa sezioni: #ffc0cb;
+grigio sfondo sezioni: #d3d3d3;
+verde sezione: #228b22;
+nero sfondo footer: #23272a;
+rosa colonna grande footer: #f08080;
+verdeacqua colonna footer: #20b2aa;
+azzurro container footer: #7fffd4;
+rosa bottoni footer: #ffb6c1;
+
+*/
+
+
+/* HEADER */
+
+.container-header{
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.menu{
+    max-width: 70%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.small-column, .big-column{
+    padding: 5px 10px;
+}
+
+.small-column{
+    width: 25%;
+}
+
+.big-column{
+    width: 50%;
+    text-align: center;
+}
+
+li{
+    list-style: none;
+    display: inline;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.small-column:last-child{
+    text-align: right;
+}
+
+.header-bottom > .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.jumbotron {
+    max-width: 60%;
+}
+
+
+/* MAIN */
+
+main > section > div.container {
+    max-width: 70%;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.box{
+    display: flex;
+}
+
+.small-container{
+    width: 35%;
+    min-height: 400px;
+}
+
+.big-container{
+    width: 65%;
+    min-height: 400px;
+}
+
+.superbig-container{
+    width: 100%;
+    min-height: 400px;
+}
+
+/* FOOTER */
+
+footer > section.big {
+    min-height: 400px;
+}
+
+footer > section.small {
+    min-height: 50px;
+}
+
+footer > section > div.container {
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+footer > section > div > div.box {
+    padding: 25px 0;
+}
+
+footer > section > div > div > div.big-column {
+    min-height: 350px;
+    width: 40%;
+}
+
+footer > section > div > div > div.small-column {
+    min-height: 350px;
+    width: 15%;
+}
+
+.last.box {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+.logo, .botton{
+    padding: 5px 10px;
+}
+
+
+
+
+
+
+/* DEBUG */
+
+.debug header{
+    background-color: #add8e6;
+    min-height: 500px;
+}
+
+.debug .menu{
+    background-color: #daa520;
+}
+
+.debug .small-column, .debug .big-column{
+    border: 1px dashed black;
+}
+
+.debug .header-bottom > .container {
+    background-color: #00008b;
+    min-height: 430px;
+}
+
+.debug .jumbotron{
+    background-color: #ee82ee;
+    min-height: 300px;
+    min-width: 800px;
+    border: 1px dashed black;
+}
+
+.debug main > section{
+    min-height: 500px;
+}
+
+.debug .white {
+    background-color: white;
+}
+
+.debug .grey {
+    background-color: #d3d3d3;
+}
+
+.debug .big-container {
+    background-color: #1e90ff;
+    border: 1px dashed black;
+}
+
+.debug .small-container {
+    background-color: #ffc0cb;
+    border: 1px dashed black;
+}
+
+.debug .superbig-container {
+    background-color: #228b22;
+    border: 1px dashed black;
+}
+
+.debug .dark-grey{
+    background-color: #23272a;
+}
+
+.debug footer > section > div > div > div.big-column {
+    background-color: #f08080;
+}
+
+.debug footer > section > div > div > div.small-column {
+    background-color: #20b2aa;
+    border: 1px dashed white;
+}
+
+.debug footer > section > div > div.last{
+    background-color: #7fffd4;
+}
+
+.debug .logo, .button {
+    background-color: #ffb6c1;
+    padding: 5px 10px;
+    border: 1px dashed black;
+    color: black;
+}
