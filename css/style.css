@@ -5,36 +5,27 @@
     box-sizing: border-box;
 }
 
-/* PALETTE  
+/* BODY */
 
-azzurro header: #add8e6;
-giallo barra menu: #daa520;
-blu sfondo jumbotron: #00008b;
-contenitore jumbotron: #ee82ee;
-azzurro sezioni: #1e90ff;
-rosa sezioni: #ffc0cb;
-grigio sfondo sezioni: #d3d3d3;
-verde sezione: #228b22;
-nero sfondo footer: #23272a;
-rosa colonna grande footer: #f08080;
-verdeacqua colonna footer: #20b2aa;
-azzurro container footer: #7fffd4;
-rosa bottoni footer: #ffb6c1;
-
-*/
-
+body{
+    font-family: 'Whitney Semibold', sans-serif; 
+}
 
 /* HEADER */
 
+header{
+    background-color: #3161e0;
+}
+
 .container-header{
     margin: 0 auto;
-    padding: 15px;
 }
 
 .menu{
     max-width: 70%;
     margin: 0 auto;
     display: flex;
+    align-items: center;
 }
 
 .small-column, .big-column{
@@ -53,25 +44,72 @@ rosa bottoni footer: #ffb6c1;
 li{
     list-style: none;
     display: inline;
+    padding: 0 10px;
 }
 
 a{
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 .small-column:last-child{
     text-align: right;
 }
 
+button{
+    padding: 10px;
+    border-radius: 50px;
+    background-color: white;
+    border-style: none;
+    font-weight: 500;
+}
+
+.special-button{
+    background-color: #23272a;
+    color: white;
+}
+
+
 .header-bottom > .container{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url("../img/jumbo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 500px;
 }
 
 .jumbotron {
-    max-width: 60%;
+    max-width: 40%;
+    text-align: center;
+    color: white;
+}
+
+h1{
+    padding-bottom: 10px;
+    font-size: 2.5em;
+}
+
+p{
+    line-height: 1.5em;
+    padding: 20px 0;
+}
+
+.dowload::before{
+    content: "\2193";
+    padding-right: 5px;
+}
+
+.button{
+    font-size: 1em;
+    padding: 10px 20px;
+    margin: 0 10px;
+}
+
+.special{
+    background-color: #23272a;
+    color: white;
 }
 
 
@@ -148,30 +186,8 @@ footer > section > div > div > div.small-column {
 
 /* DEBUG */
 
-.debug header{
-    background-color: #add8e6;
-    min-height: 500px;
-}
 
-.debug .menu{
-    background-color: #daa520;
-}
 
-.debug .small-column, .debug .big-column{
-    border: 1px dashed black;
-}
-
-.debug .header-bottom > .container {
-    background-color: #00008b;
-    min-height: 430px;
-}
-
-.debug .jumbotron{
-    background-color: #ee82ee;
-    min-height: 300px;
-    min-width: 800px;
-    border: 1px dashed black;
-}
 
 .debug main > section{
     min-height: 500px;
@@ -217,7 +233,7 @@ footer > section > div > div > div.small-column {
     background-color: #7fffd4;
 }
 
-.debug .logo, .button {
+.debug .logo, .bottone {
     background-color: #ffb6c1;
     padding: 5px 10px;
     border: 1px dashed black;
